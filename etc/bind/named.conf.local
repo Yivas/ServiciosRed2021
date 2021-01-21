@@ -1,0 +1,34 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "ejemplo.com"
+{
+	type master;
+	file "/var/lib/bind/db.ejemplo.com";
+};
+
+// Zonas inversas
+
+// Red No1: 192.168.25.0/24
+zone "25.168.192.in-addr.arpa"
+{
+	type master;
+	file "/var/lib/bind/db.192.168.25";
+};
+
+// Red No2: 192.168.26.0/24
+zone "26.168.192.in-addr.arpa"
+{
+
+	type master;
+	file "/var/lib/bind/db.192.168.26";
+};
+
+
+
+
