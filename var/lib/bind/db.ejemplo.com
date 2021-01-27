@@ -25,7 +25,7 @@ $INCLUDE /var/lib/bind/db.ejemploadmin.com
 ;PC8	IN	A	192.168.25.8
 ;PC9	IN	A	192.168.25.9
 
-; router	IN	CNAME	PC10
+router	IN	CNAME	PC10
 
 ; Servidor DHCP + Router. Debian1-Pruebas
 PC10	IN	A	192.168.25.10
