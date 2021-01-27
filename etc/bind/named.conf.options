@@ -14,7 +14,8 @@ options {
 		8.8.8.8;
 	};
 	forward only;
-	
+	allow-recursion {192.168.25.0/24; 192.168.26.0/24;};
+	allow-query {192.168.25.0/24; 192.168.26.0/24;};
 
 	//========================================================================
 	// If BIND logs error messages about the root key being expired,
