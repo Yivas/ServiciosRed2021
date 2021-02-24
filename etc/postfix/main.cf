@@ -1,8 +1,21 @@
 ############################################################################
 # Destino del correo
-mydestination = $myhostname, mgp.hopto.org, ip-10-0-0-221.ec2.internal, localhost.ec2.internal, localhost, ec2-3-210-201-227.compute-1.amazonaws.com
+mydestination = $myhostname, mgp.hopto.org, ip-10-0-0-221.ec2.internal, localhost.ec2.internal, localhost, ec2-3-228-10-61.compute-1.amazonaws.com
 # Origen del correo
 myorigin = /etc/mailname
+# Relay host
+relayhost = [smtp.gmail.com]:587
+relay_domains = gmail.com
+# Enable SASL authentification
+smtp_sasl_auth_enable = yes
+# Disallow methods that allow anonymous athentification
+smtp_sasl_security_options = noanonymous
+# Location of sasl_passwd
+smtp_sasl_password_maps = hash:/etc/postfix/sasl/passwd
+# Enable STARTTLS encryption
+smtp_tls_security_level = encrypt
+# Location of CA certificates
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
 
 
 ############################################################################
