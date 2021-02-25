@@ -1,6 +1,8 @@
 ############################################################################
+# Alias de correo
+alias_maps = hash:/etc/aliases
 # Destino del correo
-mydestination = $myhostname, mgp.hopto.org, ip-10-0-0-221.ec2.internal, localhost.ec2.internal, localhost, ec2-3-228-10-61.compute-1.amazonaws.com
+mydestination =$myhostname, mgp.hopto.org, ip-10-0-0-221.ec2.internal, localhost.ec2.internal, localhost, ec2-3-230-151-234.compute-1.amazonaws.com
 # Origen del correo
 myorigin = /etc/mailname
 # Relay host
